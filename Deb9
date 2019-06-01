@@ -176,7 +176,6 @@ push "dhcp-option DNS 1.1.1.1"
 push "dhcp-option DNS 1.0.0.1"
 push "route-method exe"
 push "route-delay 2"
-socket-flags TCP_NODELAY
 push "socket-flags TCP_NODELAY"
 keepalive 1 180
 duplicate-cn
@@ -190,7 +189,6 @@ log openvpn.log
 verb 3
 ncp-disable
 cipher none
-auth none
 max-clients 50
 
 END
@@ -205,7 +203,7 @@ cat > /home/vps/public_html/KornServer.ovpn <<-END
 # No Torrent
 # No MultiLogin
 
-auth-user-pass
+
 client
 dev tun
 proto tcp
@@ -219,8 +217,6 @@ user nobody
 comp-lzo
 remote-cert-tls server
 verb 3
-mute 2
-connect-retry 5 5
 mute-replay-warnings
 redirect-gateway def1
 script-security 2
@@ -228,7 +224,7 @@ cipher none
 tun-mtu 1400 
 mssfix 1360
 auth-user-pass
-
+sentev CLIENT_CERT 0
 http-proxy $MYIP 8888
 http-proxy-option CUSTOM-HEADER ""
 http-proxy-option CUSTOM-HEADER "POST https://e9413.g.akamaiedge.net HTTP/1.1"
@@ -261,14 +257,10 @@ user nobody
 comp-lzo
 remote-cert-tls server
 verb 3
-mute 2
-connect-retry 5 5
-connect-retry-max 8080
 mute-replay-warnings
 redirect-gateway def1
 script-security 2
 cipher none
-auth none
 END
 echo '<ca>' >> /home/vps/public_html/KornServer-Stunnel.ovpn
 cat /etc/openvpn/ca.crt >> /home/vps/public_html/KornServer-Stunnel.ovpn
@@ -546,5 +538,5 @@ echo "   - Webmin                  : http://$MYIP:10000/"  | tee -a log-install.
 echo ""
 echo "------------------------------ Modified by Korn -----------------------------"
 echo "-----Rebooting your VPS -----"
-sleep 5
+sleep 60
 reboot
