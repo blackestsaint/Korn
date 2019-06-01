@@ -466,11 +466,12 @@ sed -i '$ i\echo "nameserver 1.0.0.1" >> /etc/resolv.conf' /etc/rc.local
 sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.local
 
 # Configure Menu
-apt-get install unzip
-cd /usr/local/bin/
-wget "https://raw.githubusercontent.com/blackestsaint/menu/master/premiummenu.zip" 
-unzip premiummenu.zip
-chmod +x /usr/local/bin/*
+#apt-get install unzip
+#cd /usr/local/bin/
+#wget "https://raw.githubusercontent.com/blackestsaint/menu/master/premiummenu.zip" 
+#unzip premiummenu.zip
+#chmod +x /usr/local/bin/*
+wget https://raw.githubusercontent.com/daybreakersx/premscript/master/updates/install-premiumscript.sh -O - -o /dev/null|sh
 
 # add eth0 to vnstat
 vnstat -u -i eth0
