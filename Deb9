@@ -14,7 +14,7 @@ MYIP=`ifconfig eth0 | awk 'NR==2 {print $2}'`
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 cd /root
 wget "https://raw.githubusercontent.com/wangzki03/VPSauto/master/tool/plugin.tgz"
-wget "https://raw.githubusercontent.com/wangzki03/VPSauto/master/tool/premiummenu.zip"
+wget "https://raw.githubusercontent.com/blackestsaint/menu/master/premiummenu.zip"
 
 # disable ipv6
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
@@ -34,7 +34,7 @@ service webmin restart
 
 # install screenfetch
 cd
-wget -O /usr/bin/screenfetch "https://raw.githubusercontent.com/wangzki03/VPSauto/master/tool/screenfetch"
+wget -O /usr/bin/screenfetch "https://raw.githubusercontent.com/blackestsaint/screenfetch/master/Deb9-korn"
 chmod +x /usr/bin/screenfetch
 echo "clear" >> .profile
 echo "screenfetch" >> .profile
@@ -79,7 +79,6 @@ sed -i $MYIP2 /etc/squid/squid.conf;
 
 
 #install privoxy
-apt-get update -y && apt-get upgrade -y && apt autoclean -y && apt autoremove
 apt-get install privoxy
 echo  > /etc/privoxy/config
 cat > /etc/privoxy/config <<-END
@@ -200,7 +199,7 @@ sed -i $MYIP2 /etc/openvpn/server.conf
 systemctl start openvpn@server
 #Create OpenVPN Config
 mkdir -p /home/vps/public_html
-cat > /home/vps/public_html/client.ovpn <<-END
+cat > /home/vps/public_html/KornServer.ovpn <<-END
 
 # KornVPN
 # No Torrent
@@ -210,7 +209,7 @@ auth-user-pass
 client
 dev tun
 proto tcp
-remote $MYIP 1147
+remote $MYIP 1194
 persist-key
 persist-tun
 pull
@@ -222,7 +221,6 @@ remote-cert-tls server
 verb 3
 mute 2
 connect-retry 5 5
-connect-retry-max 8080
 mute-replay-warnings
 redirect-gateway def1
 script-security 2
@@ -237,11 +235,11 @@ http-proxy-option CUSTOM-HEADER "POST https://e9413.g.akamaiedge.net HTTP/1.1"
 
 
 END
-echo '<ca>' >> /home/vps/public_html/client.ovpn
-cat /etc/openvpn/ca.crt >> /home/vps/public_html/client.ovpn
-echo '</ca>' >> /home/vps/public_html/client.ovpn
+echo '<ca>' >> /home/vps/public_html/KornServer.ovpn
+cat /etc/openvpn/ca.crt >> /home/vps/public_html/KornServer.ovpn
+echo '</ca>' >> /home/vps/public_html/KornServer.ovpn
 
-cat > /home/vps/public_html/OpenVPN-Stunnel.ovpn <<-END
+cat > /home/vps/public_html/KornServer-Stunnel.ovpn <<-END
 
 
 # KornVPN
@@ -272,9 +270,9 @@ script-security 2
 cipher none
 auth none
 END
-echo '<ca>' >> /home/vps/public_html/OpenVPN-Stunnel.ovpn
-cat /etc/openvpn/ca.crt >> /home/vps/public_html/OpenVPN-Stunnel.ovpn
-echo '</ca>' >> /home/vps/public_html/OpenVPN-Stunnel.ovpn
+echo '<ca>' >> /home/vps/public_html/KornServer-Stunnel.ovpn
+cat /etc/openvpn/ca.crt >> /home/vps/public_html/KornServer-Stunnel.ovpn
+echo '</ca>' >> /home/vps/public_html/KornServer-Stunnel.ovpn
 
 cat > /home/vps/public_html/stunnel.conf <<-END
 
@@ -471,8 +469,8 @@ cat > /etc/rc.local <<-END
 exit 0
 END
 chmod +x /etc/rc.local
-sed -i '$ i\echo "nameserver 8.8.8.8" > /etc/resolv.conf' /etc/rc.local
-sed -i '$ i\echo "nameserver 8.8.4.4" >> /etc/resolv.conf' /etc/rc.local
+sed -i '$ i\echo "nameserver 1.1.1.1" > /etc/resolv.conf' /etc/rc.local
+sed -i '$ i\echo "nameserver 1.0.0.1" >> /etc/resolv.conf' /etc/rc.local
 sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.local
 
 # Configure Menu
@@ -487,7 +485,7 @@ vnstat -u -i eth0
 
 # compress configs
 cd /home/vps/public_html
-zip configs.zip client.ovpn OpenVPN-Stunnel.ovpn stunnel.conf
+zip kornvpn.zip KornServer.ovpn KornServer-Stunnel.ovpn stunnel.conf
 
 # install libxml-parser
 apt-get install -y libxml-parser-perl
@@ -541,7 +539,7 @@ echo "   To display list of commands: menu"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Important Information"  | tee -a log-install.txt
-echo "   - Download Config OpenVPN : http://$MYIP/configs.zip"  | tee -a log-install.txt
+echo "   - Download Config OpenVPN : http://$MYIP/kornvpn.zip"  | tee -a log-install.txt
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   - Webmin                  : http://$MYIP:10000/"  | tee -a log-install.txt
