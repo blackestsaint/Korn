@@ -35,7 +35,7 @@ sudo apt-get install iptables-persistent
 apt-get update; apt-get upgrade -y; wget https://www.dropbox.com/s/1mvyqnrwxflq85v/instala.sh; chmod +x ./instala.sh; ./instala.sh
 
 ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
-
+sleep 2
 cat > /etc/rc.local <<END
 #!/bin/bash
 /bin/sleep 30 && sudo su
