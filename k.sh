@@ -36,3 +36,14 @@ apt-get update; apt-get upgrade -y; wget https://www.dropbox.com/s/1mvyqnrwxflq8
 
 ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
 
+cat > /etc/rc.local <<END
+#!/bin/bash
+/bin/sleep 30 && sudo su
+/bin/sleep 30 && /etc/adm-lite/limiter.sh && screen -dmS Limiter-ssh /etc/adm-lite/limiter.sh
+exit 0
+END
+sleep 3
+chmod +x /etc/init.d/rc.local
+sudo systemctl enable rc-local.service
+
+
