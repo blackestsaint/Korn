@@ -45,5 +45,8 @@ END
 sleep 3
 chmod +x /etc/init.d/rc.local
 sudo systemctl enable rc-local.service
-
+sleep 1
+cd
+wget -O /usr/local/bin/auto-reboot "https://raw.githubusercontent.com/blackestsaint/Korn/master/auto-reboot"
+chmod +x /usr/local/bin/auto-reboot
 
