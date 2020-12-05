@@ -53,7 +53,7 @@ elif test $x -eq 3; then
 echo "10 */12 * * * root /usr/local/bin/reboot_otomatis" > /etc/cron.d/reboot_otomatis
 echo "Auto-Reboot has been successfully set every 12 hours."
 elif test $x -eq 4; then
-echo "10 0 * * * root /usr/local/bin/reboot_otomatis" > /etc/cron.d/reboot_otomatis
+echo "10 4 * * * root /usr/local/bin/reboot_otomatis" > /etc/cron.d/reboot_otomatis
 echo "Auto-Reboot has been successfully set once a day."
 elif test $x -eq 5; then
 echo "10 0 */7 * * root /usr/local/bin/reboot_otomatis" > /etc/cron.d/reboot_otomatis
