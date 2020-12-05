@@ -51,4 +51,10 @@ sleep 1
 cd
 wget -O /usr/local/bin/auto-reboot "https://raw.githubusercontent.com/blackestsaint/Korn/master/auto-reboot"
 chmod +x /usr/local/bin/auto-reboot
+sleep 1
+wget https://github.com/lfasmpao/open-http-puncher/releases/download/0.1/ohpserver-linux32.zip
+unzip ohpserver-linux32.zip
+chmod +x ohpserver
+sleep 1
+
 
