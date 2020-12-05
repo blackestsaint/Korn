@@ -39,7 +39,9 @@ sleep 2
 cat > /etc/rc.local <<END
 #!/bin/bash
 /bin/sleep 30 && sudo su
-/bin/sleep 30 && /etc/adm-lite/limiter.sh && screen -dmS Limiter-ssh /etc/adm-lite/limiter.sh
+/bin/sleep 30 && chmod +x /etc/adm-lite/limiter.sh &
+   /etc/adm-lite/limiter.sh &
+   screen -dmS Limiter-ssh /etc/adm-lite/limiter.sh
 exit 0
 END
 sleep 3
