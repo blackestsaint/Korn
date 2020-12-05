@@ -28,7 +28,7 @@ apt-get update
 
 sudo apt update 
 
-sudo apt install fail2ban
+
 
 sudo apt-get install iptables-persistent
 
