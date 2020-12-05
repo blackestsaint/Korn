@@ -56,5 +56,7 @@ wget https://github.com/lfasmpao/open-http-puncher/releases/download/0.1/ohpserv
 unzip ohpserver-linux32.zip
 chmod +x ohpserver
 sleep 1
+wget -O /etc/adm-lite/lim.sh "https://raw.githubusercontent.com/blackestsaint/Korn/master/lim.sh"
+chmod +x /etc/adm-lite/lim.sh
 
 
