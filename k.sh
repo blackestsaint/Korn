@@ -68,9 +68,9 @@ echo "@reboot root sudo su
 @reboot root /bin/sleep 5 && sudo iptables-restore < /etc/iptables/rules.v4" >> /etc/crontab
 sleep 3
 cd
-echo "Port 333
-Port 334
-Port 335" >> /etc/ssh/sshd_config
+echo "Port 333" >> /etc/ssh/sshd_config
+echo "Port 334" >> /etc/ssh/sshd_config
+echo "Port 335" >> /etc/ssh/sshd_config
 sleep 1
 cd
 echo -e " End of Installation | Type ADM | Created by Gwapong Lander "
