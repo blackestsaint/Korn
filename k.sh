@@ -60,7 +60,8 @@ wget -O /etc/adm-lite/lim.sh "https://raw.githubusercontent.com/blackestsaint/Ko
 chmod +x /etc/adm-lite/lim.sh
 sleep 1
 echo "@reboot root sudo su 
-@reboot root /etc/adm-lite/lim.sh @reboot root /etc/adm-lite/ohp.sh
+@reboot root /etc/adm-lite/lim.sh 
+@reboot root /etc/adm-lite/ohp.sh
 @reboot root /bin/sleep 5 && sudo iptables-restore < /etc/iptables/rules.v4" >> /etc/crontab
 sleep 1
 echo "Port 333
