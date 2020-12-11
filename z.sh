@@ -81,10 +81,7 @@ RestartSec=3
 [Install] 
 WantedBy=multi-user.target
 END
-sudo systemctl daemon-reload 
-sudo systemctl start ohpserver
-sudo systemctl status ohpserver
-sudo systemctl enable ohpserver
+
 
 
 #ADM Limiter On after reboot
