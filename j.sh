@@ -102,7 +102,7 @@ echo -e " End of Installation | Created by Gwapong Lander "
 echo -e""
 echo -e"Next Step:"
 echo -e"(Menu:9) Install Dropbear, Squid, SSL, Openvpn"
-echo -e"(Menu:2) Install TCP Speed and Squid Cache and T
-echo -e"(Menu:1) Install Banner
+echo -e"(Menu:2) Install TCP Speed and Squid Cache and Torrent"
+echo -e"(Menu:1) Install Banner"
 echo -e""
 
