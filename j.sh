@@ -76,6 +76,7 @@ sleep 5
 sudo su
 screen -dm bash -c "./ohpserver -port 8899 -proxy $MYIP:61790 -tunnel $MYIP:333"
 END
+sleep 1
 chmod +x /etc/adm-lite/ohp.sh
 
 #ADM Limiter On after reboot
