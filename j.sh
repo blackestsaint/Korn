@@ -64,7 +64,7 @@ sleep 1
 #OHP Over-HTTP-Puncher
 cd
 wget https://github.com/blackestsaint/Korn/blob/master/ohpserver-linux32.zip
- unzip ohpserver-linux32.zip 
+unzip ohpserver-linux32.zip 
 chmod +x ohpserver
 sleep 1
 
