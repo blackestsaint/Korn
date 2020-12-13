@@ -72,7 +72,7 @@ source user
 exit
 ;;
 
-;;
+
 *)
 cd /etc/adm-lite
 source user
