@@ -1,0 +1,339 @@
+Gwapong Lander
+ ONLINE:
+ EXPIRED:
+ HIS SYSTEM:
+ WELCOME TO THE MENU!
+ MANAGE USERS
+ TOOLS
+ TO UPDATE
+ REMOVE Korn Server
+ OPTION:
+ [ON]
+ [OFF]
+ CHANGE MENU COLORS
+ [BACK / EXIT]
+ USERS MENU
+ CREATE USERS
+ REMOVE USERS
+ MODIFY USERS
+ USER DETAILS
+ VERIFY ONLINE USERS
+ CONTROLS
+ YOUR CURRENTLY USED COLORS
+ Choose in order, 1 2 3 4 5 6
+ What is the color sequence ?:
+ Six colors have not been selected!
+ Applying the selected color!  ...
+ CHANGE LANGUAGE
+ Korn Server USER CREATOR
+ Name of the new user:
+ Null name
+ Existing user!
+ Password for user
+ Duration for the User
+ Connection limit for user
+ User:
+ Password:
+ Limit:
+ Validity:
+ LIST OF REGISTERED USERS
+ REMOVE USERS
+ Delete 1 User
+ Delete all users
+ Select user or type name
+ No user has been selected
+ User does not exist!
+ removed
+ remove
+ Enter, to return!
+ USER EDITOR
+ No user has selected
+ Which option are you going to edit from:
+ Number of logins of:
+ Expiration date of:
+ Change password for:
+ What is the new login limit:
+ Limit not changed!
+ Limit changed
+ How many days should it last?
+ Unchanged date
+ Changed!
+ What is the new password for:
+ Password not changed!
+ New password applied
+ No option selected!
+ User
+ Password
+ Limit
+ Weather
+ ??
+ Unlimited
+ Timed out
+ You've got:
+ Users on your server
+ days
+ USERS
+ CONNECTION
+ WEATHER
+ That Tool Will Translate
+ Brought you by Gwapong Lander
+ Select the language number, or use the initials of the language.
+
+ Translating the system ...
+ Enter a language:
+ hours
+ minutes
+ use
+ There is no user online
+ DELETE EXPIRED USERS
+ No Expired Users!
+ TOOLS MENU
+ CREATE BACKUP
+ RESTORE BACKUP
+ CLEAR CACHE
+ BAD UDP
+ TCP SPEED
+ FAILBAN
+ SQUID CACHE
+ SHARE ONLINE FILE
+ Enter only numeric values
+ STARTING BACKUP
+ User Backup
+ User not registered in Korn Server
+ Enter the user information.
+ Current password:
+ Duration Days:
+ Connection limit:
+ Full backup
+ Back UDP available in folder
+ Enter the backup directory
+ or Enter a link for a backup
+ File or link
+ Invalid file or link!
+ Backup incompatible with Korn Server
+ Restoration ...
+ User not restored
+ This Tool will Clear Caches
+ and delete temporary files
+ Procedure completed
+ BADVPN will install
+ which is nothing more than a program
+ which frees UDP ports on the server
+ and thus enable the VOIP service!
+ Start
+ BADVPN started successfully
+ Stopping BADVPN service ...
+ BADVPN stopped successfully
+ This Script was projected
+ To Improve Latency
+ and server speed!
+ analyze
+ This is an experimental script
+ Use at your own risk and expense!
+ This script will change some
+ network settings
+ of the system to reduce
+ latency and improve speed
+ Continue with the installation?
+ Network Configuration
+ have been added successfully
+ have already been added in the system!
+ You want to remove the settings
+ Network Configuration
+ have been successfully removed
+ Why not?
+ uninstall
+ View record
+ This is FAILBAN PROTECTION
+ Made solely to protect the safety of the
+ System, your goal is to analyze
+ ACCESS LOGS and block all
+ suspicious action
+ increasing by 70% of its security.
+ Do you want to install Fail2Ban?
+ Fail2ban Will Be Installed
+ Next Services
+ Do you confirm the choice?
+ Installation completed
+ Squid cache is nothing but
+ A browsing history in Squid
+ That will save data when opening sites
+ Hosted in your cache
+ The script will do a short check!
+ Squid not identified!
+ Squid is Active on your system!
+ There is no cache service on the Squid!
+ Restarting Services Wait!
+ Activating the SquidCache service!
+ Disabling SquidCache !!
+ wait!
+ PLACE FILE ONLINE
+ OPTION TO PLACE
+ ANY ONLINE FILE
+ WHAT THIS FILE
+ IN THE ADDRESS BOOK
+ REMOVE ONLINE FILE
+ SEE MY FILES ONLINE
+ Invalid option
+ Select a file
+ No file has been selected
+ Procedure Done Successfully
+ ACCESS TO THE FILE THROUGH THE LINK
+ Your files in the folder
+ TEST YOUR SPEED
+ VPS INFORMATION
+ Test start, please wait ...
+ Ping response time
+ Loading speed
+ Download speed
+ Error processing information
+ His system
+ based
+ Physical Processor
+ Operating frequency
+ Processor usage
+ Total Virtual Memory
+ Virtual Memory In use
+ Free Virtual Memory
+ Virtual Memory Swap
+ Online time
+ Machine name
+ Machine Direction
+ Kernel versions
+ Architecture
+ analyze
+ proceedings
+ updated
+ Updated files
+ Valid!  Updating ...
+ Expired or invalid Exiting!
+ Are you sure about this?
+ Uninstall canceled by user
+ Created by @iSrDiiabloNS
+ ADD / REMOVE HOST-SQUID
+ not found
+ Or Squid not installed
+ Add Host to Squid
+ Remove host from Squid
+ Invalid Option
+ Current domains on file
+ Enter the Host-Squid you want to add
+ Starting with a., Example: .bughost.com
+ It's empty, you haven't written anything!
+ Domain already exists in file
+ Success, File Updated!
+ Enter the domain you want to remove
+ domain not found
+ Enter the text for the BANNER
+ green
+ Red
+ blue
+ yellow
+ purple
+ Enter the main message
+ Want to Add More Texts
+ COLORFUL BANNER
+ Dependencies Not Installed, Do you want to install?
+ Installing dependencies for proxy-socks ...
+ Stopping proxy-sock ...
+ Proxy-sock stopped!
+ Select the port to rotate
+ Your Proxy Sockets:
+ Opa, is being used by:
+ Disable this service to use
+ Port:
+ For the SOCKS
+ Enter, to select another port!
+ Write a text, for status 200OK
+ Choose the type of sock to use
+ PROXY SOCKET IN PYTHON
+ PROXY SOCKET IN PYTHON3
+ Something went wrong, Socks Not Started!
+ perfect
+ BRUTE FORCE PAYLOAD
+ ACTIVATE PROXY SOCKET
+ SIMULTANEOUS CONNECTION LIMITER
+ SEE PROXY PYTHON
+ INSTALLATION MENU
+ NONE PROXY SOCKS IS ACTIVE
+ ENTER A HOST TO CREATE
+ GENERIC PAYLOADS!
+ PAYLOAD CREATOR
+ ENTER THE HOST
+ Do not add anything.
+ PAYLOAD GENERATOR
+ CHOOSE THE REQUIREMENTS METHOD
+ AND FINALLY
+ INJECTION METHOD!
+ SOMETHING IS
+ EVIL!
+ SUCCESS !, PAYLOADS GENERATED
+ DIRECTORY:
+ ACTIVATE PROXY GETTUNEL
+ What is the port you want for the GetTUNNEL
+ Port Used By:
+ GETTUNEL KEY:
+ GETTUNEL STARTED SUCCESSFULLY!
+ GETTUNEL DOES NOT START!
+ Select the service to manage ports
+ No Service Chosen, Or Service Chosen Is Not Supported
+ Do you want to close the current port?
+ Or Open a new port in the service?
+ Procedure, Finished!
+ DOOR MANAGEMENT
+ Chosen service and port:
+ Unsupported architecture!
+ APPROXIMATE USE
+ TOTAL CONSUMPTION
+ USERS
+ CONSUMPTION MONITOR
+ Verification is not activated, or there is no information
+ TELEGRAM BOT
+ SHADOWSOCKS / SSL stunnel
+ SHADOWSOCKS AND SSL
+ select a redirect port
+ select a port
+ Invalid port!
+ No Inland Ports Open!
+ Port Of Your External SSL!  Enter port in injector application
+ Port in use!
+ Answer the Questions Correctly!
+ Encryption Media
+ Select encryption
+ Encryption not selected!
+ Password:
+ TCP OVER
+ ULTRA HOST (SUBDOMAIN SCANNER)
+ HOST
+ CAPTURE LIMIT
+ ENTER A PASSWORD and THEN CONFIRM IT
+ VNC connects using the ip of the vps on the port
+ To access the graphical interface
+ Download from PlayStore:
+ VNC is not active Do you want to activate?
+ VNC is active Do you want to disable?
+ VNC SERVER
+ YOUR Korn Server IS UPDATED!
+ YOUR Korn Server NEEDS TO UPDATE!
+ APPLY TORRENT LOCK
+ Create a new OpenVPN file?
+ Create file with authentication (username and password)?
+ File generated in:
+ To leave it online:
+ AUTO STARTUP
+ PROXY SQUID AUTHENTICATION
+ Error generating password, squid authentication did not start!
+ AUTHENTICATION OF THE INITIATED PROXY SQUID.
+ Squid proxy not installed, cannot continue.
+ PROXY SQUID AUTHENTICATION DISABLED.
+ The user cannot be null.
+ Do you want to enable squid proxy authentication?
+ Do you want to disable squid proxy authentication?
+ YOUR IP:
+ REBOOT VPS (REBOOT)
+ Do you really want to Restart the VPS?
+ Preparing for restarting VPS.
+ INSTALLATION MENU
+ INSTALL
+ SET UP
+ Select an option
