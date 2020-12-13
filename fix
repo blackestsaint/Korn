@@ -15,6 +15,7 @@ cd
 sudo echo "NO_START=0
 DROPBEAR_PORT=9933
 DROPBEAR_EXTRA_ARGS="-p 9870 "
+DROPBEAR_EXTRA_ARGS="-p 2110 "
 DROPBEAR_BANNER="/etc/issue.net"
 DROPBEAR_RECEIVE_WINDOW=65536" > /etc/default/dropbear
 sleep 1
