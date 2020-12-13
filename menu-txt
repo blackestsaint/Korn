@@ -1,0 +1,13 @@
+#!/bin/bash
+source cabecalho
+[[ -e /etc/bash.bashrc-bakup ]] && _autorun="\033[1;32m${txt[10]}" || _autorun="\033[1;31m${txt[11]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[2]} ∆ ${cor[5]} ${txt[4]}"
+echo -e "${cor[1]} =================================== ${cor[0]}"
+echo -e "${cor[2]} [0] >${cor[4]} ${txt[13]}"
+echo -e "${cor[2]} [1] > Account Management"
+echo -e "${cor[2]} [2] > Server Tools and Security"
+echo -e "${cor[2]} [3] > Essentials Installer"
+echo -e "${cor[2]} [4] > Auto Reboot Settings"
+echo -e "${cor[2]} [5] > Online Users"
+echo -e "${cor[1]} ===================================  ${cor[0]}"
