@@ -19,6 +19,7 @@ source ferramentas
 exit
 ;;
 3)
+clear
 $value > /dev/null 2>&1
 chmod +x /etc/adm-lite/*
 [[ -e /etc/adm-lite/idioma_menuinst ]] && idioma=$(cat /etc/adm-lite/idioma_menuinst|head -1) || idioma="pt"
@@ -27,11 +28,13 @@ ${value} ${idioma}
 exit
 ;;
 4)
+clear
 sudo auto-reboot
 exit
 ;;
 5)
-sudo user-login
+clear
+cat /root/log-install.txt
 exit
 ;;
 
