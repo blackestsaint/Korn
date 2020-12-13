@@ -1,0 +1,13 @@
+#!/bin/bash
+#Created by Korn
+
+#Timer sleep 55= 55seconds
+
+#add this  in /etc/rc.local >> "sudo /path/of/file/timer"
+#chmod +x  /path/of/file/timer
+
+#for privoxy, restart every 55 seconds
+while true ; do service privoxy force-reload & sleep 55; done 
+
+#for squid, restart every 57 seconds
+while true ; do service squid3 force-reload & sleep 57; done 
