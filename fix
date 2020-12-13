@@ -13,9 +13,9 @@ sleep 1
 #prevent losing sshd port
 cd
 sudo echo "NO_START=0
-DROPBEAR_PORT=9933
-DROPBEAR_EXTRA_ARGS="-p 9870 "
-DROPBEAR_EXTRA_ARGS="-p 2110 "
+DROPBEAR_PORT="9933"
+
+DROPBEAR_EXTRA_ARGS=""-p 2110 ""
 DROPBEAR_BANNER="/etc/issue.net"
 DROPBEAR_RECEIVE_WINDOW=65536" > /etc/default/dropbear
 sleep 1
@@ -61,4 +61,12 @@ refresh_pattern ^ftp: 1440 20% 10080
 refresh_pattern ^gopher: 1440 0% 1440
 refresh_pattern -i (/cgi-bin/|\?) 0 0% 0
 refresh_pattern . 0 20% 4320
-visible_hostname Gwapong Lander" >> /etc/squid/squid.conf
+visible_hostname Gwapong Lander" > /etc/squid/squid.conf
+
+
+cd
+sudo echo "Port 333" >> /etc/ssh/sshd_config
+sudo echo "Port 334" >> /etc/ssh/sshd_config
+sudo echo "Port 335" >> /etc/ssh/sshd_config
+sudo echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
+
