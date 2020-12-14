@@ -726,8 +726,8 @@ rm $porta_var
 [[ $v1 = $v2 ]] && vesaoSCT="\033[1;32m${txt[315]}" || vesaoSCT="\033[1;31m${txt[316]}"
 credit=$(cat ./menu_credito)
 __IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
+echo ""
+echo -e "---------=[ Current ACTIVE Ports ]=-----------" | lolcat
 
-echo -e "${cor[1]} =================================== ${cor[0]}"
 ports_
-echo -e "${cor[1]} =================================== ${cor[0]}"
-echo -e "${cor[2]} ${vesaoSCT} ${cor[0]}"
+
