@@ -97,6 +97,7 @@ exit
 ;;
 12)
 source menu_inst 11
+read -p "Wait for the Confirmation Text before press Enter."
 cd /etc/adm-lite
 source menu
 exit
