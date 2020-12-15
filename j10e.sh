@@ -339,3 +339,8 @@ echo ""
 echo "   - Other concern and questions of these auto-scripts?" | tee -a log-install.txt | lolcat
 echo "      Direct Messege : www.facebook.com/kornips" | tee -a log-install.txt | lolcat
 echo ""
+
+echo ""
+echo ""
+read -p " After you read installation log. Press Enter to "Restart" "
+sudo reboot
