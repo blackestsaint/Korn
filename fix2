@@ -21,12 +21,5 @@ echo "     3. If you wish to change port. Do it via SFTP." | lolcat
 echo "     4. Multi-login Detection is always on. " | lolcat 
 echo ""
 echo ""
-while true; do
- read -p "Do you wish to install Speed Up PATCH ( Type: Yes or No)?" yn 
-case $yn in 
-[Yy]* ) sudo fix; break;; 
-[Nn]* ) exit;; 
-* ) echo "Please answer Yes or No.";; 
-esac 
-done
-
+read -p "Please Enter to continue.."
+sudo fix
