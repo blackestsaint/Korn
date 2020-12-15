@@ -454,7 +454,7 @@ echo "--------------------------------------------------------------------------
 
 echo ""
 echo "Server Information: " | tee -a log-install.txt | lolcat
-echo "   - Timezone: Asia/Manila [GMT +8] " tee -a log-install.txt | lolcat
+echo "   - Timezone: Asia/Manila [GMT +8] " | tee -a log-install.txt | lolcat
 echo "   - Server Auto-Reboot: [OFF] Go to menu to configure" | tee -a log-install.txt | lolcat
 echo "   - IPv6 : [OFF]" | tee -a log-install.txt | lolcat
 echo "   - Webmin : ON" | tee -a log-install.txt | lolcat
