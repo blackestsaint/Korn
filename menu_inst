@@ -1185,7 +1185,7 @@ if [ -d '/usr/local/ddos' ]; then
 	fi
 	sleep 4s
 	echo -e "$barra"
-	echo -e "\033[1;31m ANTIDDOS UNSTALLED!\033[1;37m"
+	echo -e "\033[1;31m ANTIDDOS UNINSTALLED!\033[1;37m"
 	echo -e "$barra"
 	return 1
 else
