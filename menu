@@ -104,6 +104,7 @@ exit
 ;;
 13)
 sudo auto-reboot
+read -p "Press Enter....."
 cd /etc/adm-lite
 source menu
 exit
