@@ -155,9 +155,7 @@ exit
 ;;
 
 20)
-source menu_inst 9
-cd /etc/adm-lite
-source menu
+clear
 exit
 ;;
 
