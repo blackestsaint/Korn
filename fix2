@@ -13,13 +13,7 @@ echo "   4. Optimize Squid Connection." | lolcat
 echo "   5. Additional SSHD Port: 333 " | lolcat 
 echo "   6. Squid Cache [ON]" | lolcat 
 echo ""
-echo "    Note:" | lolcat 
-echo "     1. Do this everytime you install Squid or Dropbear." | lolcat 
-echo "     2. Squid Port and Dropbear Port are cannot be change" | lolcat 
-echo "       I intentionally disabled Port to be edited for OHP purposes." | lolcat 
-echo "     3. If you wish to change port. Do it via SFTP." | lolcat 
-echo "     4. Multi-login Detection is always on. " | lolcat 
-echo ""
+
 echo ""
 read -p "Please Enter to continue.."
 sudo fix
