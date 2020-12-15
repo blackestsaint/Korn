@@ -1,0 +1,167 @@
+#!/bin/bash
+
+source menu-txt
+echo -ne "${cor[6]}"
+read -p " ${txt[9]} " _selecao
+case $_selecao in
+
+1)
+source usercodes 1
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
+exit
+;;
+2)
+source usercodes 2
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
+exit
+;;
+3)
+source usercodes 3
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
+exit
+;;
+4)
+source usercodes 4
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
+exit
+;;
+5)
+source usercodes 5
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
+exit
+;;
+6)
+source usercodes 6
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
+exit
+;;
+7)
+source ferramentascodes 1
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
+exit
+;;
+
+
+8)
+source ferramentascodes 2
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
+exit
+;;
+9)
+source ferramentascodes 6
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
+exit
+;;
+10)
+source ferramentascodes 14
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
+exit
+;;
+11)
+source ferramentascodes 15
+echo -ne "${cor[5]}"
+read -p " ${txt[47]}"
+cd /etc/adm-lite
+source menu
+exit
+;;
+12)
+source menu_inst 11
+cd /etc/adm-lite
+source menu
+exit
+;;
+13)
+sudo auto-reboot
+cd /etc/adm-lite
+source menu
+exit
+
+;;
+14)
+cat /root/log-install.txt
+cd /etc/adm-lite
+source menu
+exit
+;;
+
+15)
+source menu_inst 3
+cd /etc/adm-lite
+source menu
+exit
+
+
+;;
+16)
+source menu_inst 4
+cd /etc/adm-lite
+source menu
+exit
+;;
+
+17)
+source menu_inst 5
+cd /etc/adm-lite
+source menu
+exit
+;;
+18)
+clear
+echo "" 
+echo "In some cases, it takes time to load. "  | lolcat
+echo "Please be patient with me."  | lolcat 
+read -p "Press Enter to continue..."  | lolcat 
+source menu_inst 6
+cd /etc/adm-lite
+source menu
+exit
+;;
+19)
+source menu_inst 9
+cd /etc/adm-lite
+source menu
+exit
+;;
+
+20)
+source menu_inst 9
+cd /etc/adm-lite
+source menu
+exit
+;;
+
+*)
+source menu
+;;
+esac
