@@ -220,7 +220,7 @@ else
  txt [208] = "Expired or invalid Exiting!"
  txt [209] = "Are you sure about this?"
  txt [210] = "Uninstall canceled by user"
- txt [211] = "Created by @iSrDiiabloNS"
+ txt [211] = "Modded by: Gwapong Lander"
  txt [212] = "ADD / REMOVE HOST-SQUID"
  txt [213] = "not found"
  txt [214] = "Or Squid not installed"
