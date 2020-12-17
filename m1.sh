@@ -127,6 +127,7 @@ echo "@reboot root /etc/adm-lite/lim.sh
 @reboot root /etc/adm-lite/caches.sh
 @reboot root /etc/adm-lite/timer.sh
 @reboot root /bin/sleep 5 && sudo iptables-restore < /etc/iptables/rules.v4" >> /etc/crontab
+@reboot source /etc/adm-lite/usercodes 6
 sleep 1
 
 #Translate to English 1
