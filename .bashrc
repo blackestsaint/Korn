@@ -98,3 +98,4 @@ fi
 #    . /etc/bash_completion
 #fi
 alias menu="sudo menu | lolcat"
+alias adm="sudo menu | lolcat"
