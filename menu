@@ -76,6 +76,7 @@ source menu
 exit
 ;;
 9)
+cd /etc/adm-lite/
 source ferramentascodes 15
 echo -ne "${cor[5]}"
 read -p " ${txt[47]}"
