@@ -1,10 +1,10 @@
 #!/bin/bash
 #Created by Gwapong Lander
-fun_bar "apt-get install fail2ban -y"
+apt-get install fail2ban -y
 cd $HOME
 wget -O fail2ban https://www.dropbox.com/s/zkd5uutdk6k2185/fail2ban-0.9.4.tar.gz?dl=0 -o /dev/null
 tar -xf $HOME/fail2ban
 cd $HOME/fail2ban-0.9.4
-fun_bar "./setup.py install" 
+./setup.py install
 cd
 wget -O /etc/fail2ban/jail.local "https://raw.githubusercontent.com/blackestsaint/Korn/master/jail.local"
