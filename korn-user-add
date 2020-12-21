@@ -1,0 +1,66 @@
+#!/bin/bash
+# Created by http://www.vps-murah.net
+# Modified by 0123456
+
+clear
+  echo ""
+  echo ""
+  echo ""
+read -p "        Username       : " username
+egrep "^$username" /etc/passwd >/dev/null
+if [ $? -eq 0 ]; then
+echo "Username already exists in your VPS"
+exit 0
+else
+read -p "        Password       : " password
+read -p "     Multilogin Limit  : " limit
+read -p "        How many days? : " masa_aktif
+MYIP=$(wget -qO- ipv4.icanhazip.com)
+today=`date +%s`
+masa_aktif_detik=$(( $masa_aktif * 86400 ))
+saat_expired=$(($today + $masa_aktif_detik))
+tanggal_expired=$(date -u --date="1970-01-01 $saat_expired sec GMT" +%Y/%m/%d)
+tanggal_expired_display=$(date -u --date="1970-01-01 $saat_expired sec GMT" '+%d %B %Y')
+clear
+echo "Connecting to Server..."
+sleep 0.5
+echo "Creating Account..."
+sleep 0.5
+echo "Generating Host..."
+sleep 0.5
+echo "Generating Your New Username: $username"
+sleep 0.5
+echo "Generating Password: $password"
+sleep 1
+
+
+
+cat > /etc/adm-lite/userDIR/$username <<EOF
+senha: $username
+limite: $limit
+data: $masa_aktif
+EOF
+
+
+useradd $username
+usermod -s /bin/false $username
+usermod -e  $tanggal_expired $username
+  egrep "^$username" /etc/passwd >/dev/null
+  echo -e "$password\n$password" | passwd $username
+  clear
+  echo ""
+  echo ""
+  echo ""
+  echo "---------------------------------------"
+  echo "            ACCOUNT DETAILS            "
+  echo "---------------------------------------" 
+  echo "   Username          : $username"
+  echo "   Password          : $password"
+  echo "   Multilogin Limit  : $limit "
+  echo "   Active Time       : $masa_aktif Days"
+  echo "   Date Expired      : $tanggal_expired_display"
+  echo "---------------------------------------"
+  echo " "
+  echo " "
+  echo " "
+fi

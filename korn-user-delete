@@ -1,0 +1,24 @@
+#!/bin/bash
+# Created by http://www.vps-murah.net
+# Modified by 0123456
+
+
+clear
+read -p "Input Username you want to remove: " username
+egrep "^$username" /etc/passwd >/dev/null
+if [ $? -eq 0 ]; then
+# proses mengganti passwordnya
+userdel -f $username
+rm /etc/adm-lite/userDIR/$username
+clear
+  echo " "
+  echo " "
+  echo " "
+  echo "-----------------------------------------------"
+  echo -e "Username ${blue}$username${NC} successfully ${red}REMOVE${NC}."
+  echo -e "Login access for username ${blue}$username${NC} has been deleted"
+  echo "-----------------------------------------------"
+else
+echo "Username not found on your server"
+    exit 1
+fi
